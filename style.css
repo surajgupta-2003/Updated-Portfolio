@@ -1,0 +1,731 @@
+/* 
+=>height set mt kro bcho isse , width deskte h
+=>1pixel=1/96th of an inch
+*/
+
+/* Some things that will be used in the website throughout starts------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Rancho&family=Slabo+27px&display=swap');
+/*Rainbow BUTTON EFFECTS starts */
+.rainbow-1:hover {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    red
+  );
+  animation: slidebg 2s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+/*Rainbow BUTTON EFFECTS ends */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Variables Define */
+:root {
+  --primary-color: grey;
+  --primary-color-dark: black;
+  --secondary-color: #e3cd9d;
+  --tertiary-color: #f1ac16;
+  --text-dark: rgb(57, 57, 57);
+  --text-extra-light: white;
+  --text-light: #3a3939;
+  --p_font: "Slabo 27px", serif;
+  --s_font: "Rancho", cursive;
+}
+
+body{
+  background-color: var(--primary-color-dark);
+  font-family: var(--p_font);
+}
+
+p{
+  font-family: var(--s_font);
+  font-size:1.3rem !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+/* Glow Hovering Effect */
+#page1 .right:hover,
+#page1 .left input:hover {
+  opacity: 100%;
+  box-shadow: 0 0 70px #2f383f, 0 0 70px #2d3b47, 0 0 70px #233544;
+  transition-delay: 0.001s;
+  filter: brightness(200%);
+  border-top-color: var(--text-dark);
+  border-bottom-color: var(--text-dark);
+}
+/* Some things that will be used in the website throughout ends------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Navebar starts ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  /* Glass effect starts */
+  backdrop-filter: blur(7px) saturate(172%);
+  -webkit-backdrop-filter: blur(7px) saturate(172%);
+  background-color: rgba(94, 90, 90, 0.16);
+  /* Glass effect ends */
+}
+
+ul {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul div {
+  margin-right: 2rem;
+}
+
+/* Rainbow Name starts */
+.name span {
+  font-size: 2rem;
+}
+
+.name span:nth-child(1) {
+  color: violet;
+}
+.name span:nth-child(2) {
+  color: indigo;
+}
+.name span:nth-child(3) {
+  color: blue;
+}
+.name span:nth-child(4) {
+  color: green;
+}
+.name span:nth-child(5) {
+  color: yellow;
+}
+.name span:nth-child(6) {
+  color: orange;
+}
+.name span:nth-child(7) {
+  color: red;
+}
+.name span:nth-child(8) {
+  color: violet;
+}
+.name span:nth-child(9) {
+  color: indigo;
+}
+.name span:nth-child(10) {
+  color: blue;
+}
+/* Rainbow Name ends */
+
+nav li {
+  padding: 1rem;
+  cursor: pointer;
+  color: var(--text-light);
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+nav li:hover {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  box-shadow: inset 7px 7px 20px #100f0f,
+            inset -7px -7px 20px #3e3d3d;
+}
+/* Navbar ends-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Page1 starts -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#page1 {
+  background-color: var(--primary-color-dark);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page1 .left {
+  height: 80%;
+  width: 50%;
+  margin: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8rem;
+  background-image: url(Image/11.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#page1 .left:hover {
+  color: var(--secondary-color);
+}
+
+#page1 .left p {
+  font-style: italic;
+  line-height: 1.4rem;
+  margin: 1rem 0rem;
+}
+
+#page1 .left p:hover {
+  color: var(--tertiary-color);
+}
+
+.left span {
+  color: var(--text-extra-light);
+
+}
+
+#page1 .right {
+  background-image: url(Image/suraj\ image.png);
+  background-size: cover;
+  background-position: top;
+  border-radius: 50%;
+  min-height: 60vh;
+  width: 40%;
+  margin-top: 5rem;
+  border-bottom: 2px solid red;
+}
+
+#page1 div > input {
+  padding: 0.6rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  background-color: var(--text-light);
+  color: var(--text-extra-light);
+  box-shadow: inset 7px 7px 20px #100f0f,
+            inset -7px -7px 20px #3e3d3d;
+}
+
+#page1 div > input:hover {
+  color: var(--tertiary-color);
+  background-color: var(--primary-color-dark);
+}
+/* Page1 ends -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Section Heading Format */
+.Head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  background-color: var(--primary-color-dark);
+  color: var(--text-extra-light);
+  border-bottom: 2px solid var(--text-light);
+}
+
+/* Page2 starts ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#page2 {
+  /* height: 75vh; */
+  background-color: var(--primary-color-dark);
+  background-image: url(Image/w3.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#coding {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  /* height: 10%; */
+  margin-bottom: 1rem;
+}
+
+#coding > a {
+  background-color: var(--text-light);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#coding button {
+  font-size: 1rem;
+  min-width: 9rem;
+  background-color: var(--text-light);
+  padding: 0.6rem;
+  margin: 0.2rem;
+  background-color: var(--text-light);
+  color: var(--text-extra-light);
+  box-shadow: inset 7px 7px 20px #100f0f,
+            inset -7px -7px 20px #3e3d3d;
+}
+
+#coding button:hover {
+  color: var(--tertiary-color);
+  background-color: var(--primary-color-dark);
+  cursor: pointer;
+}
+
+#page2 > .skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#page2 > .skills > .skill {
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  border: 3%;
+  backdrop-filter: blur(7px) saturate(172%);
+  -webkit-backdrop-filter: blur(7px) saturate(172%);
+  background-color: rgba(94, 90, 90, 0.16);
+  border-radius: 1rem;
+  color: var(--text-extra-light);
+}
+
+#page2 > .skills > .skill:hover {
+  border: 1px solid var(--text-extra-light);
+}
+/* Page2 ends------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Page3 & Page4 starts ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#page3,
+#page4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(Image/w7.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: bottom;
+}
+
+/* Scrolling images starts */
+.projectbox{
+  overflow-x: auto;
+  /* height: 30vh; */
+  display: flex;
+  background-color: var(--primary-color-dark);
+  margin-bottom: 2rem;
+}
+.projectcard img{
+  height: 26vh;
+  width: 20vw;
+}
+/* scrolling images end */
+
+#page4{
+  background-image: url(Image/w-5.jpg);
+}
+
+iframe{
+  width: 100%;
+  position: absolute;
+  height: 93.5vh;
+  opacity: 0.3;
+  border: none;
+}
+
+/* Page3 Container designing starts */
+
+.container {
+  height: 70vh;
+  width: 28vw;
+  backdrop-filter: blur(7px) saturate(172%);
+  -webkit-backdrop-filter: blur(7px) saturate(172%);
+  background-color: rgba(139, 134, 134, 0.16);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+.container:hover{
+  box-shadow: inset 7px 7px 20px #100f0f,
+  inset -7px -7px 20px #3e3d3d;
+}
+
+.out {
+  width: 35%;
+  height: 28%;
+  background-color: var(--primary-color-dark);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: -1.5rem;
+  box-shadow: 0px 0px 28px 1px rgba(233, 195, 126, 0.93);
+}
+
+.container .out .in {
+  width: 98%;
+  height: 98%;
+  border-radius: 50%;
+  background-position: top;
+  background-size: cover;
+  border: 8px double rgba(233, 195, 126, 0.93);
+}
+
+.container .out .in img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#page3 .container h2 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 2rem;
+}
+
+#page3 .container h2:hover {
+  color: var(--tertiary-color);
+}
+
+.container > p {
+  color: var(--secondary-color);
+  height: 65%;
+  padding: 2rem;
+  text-align: center;
+  width: 80%;
+  background-image: url(Image/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: inset 0px 0px 28px 1px rgba(7, 255, 250, 0.57);
+}
+
+.container p:hover {
+  box-shadow: inset 0px 0px 28px 1px rgba(235, 183, 62, 0.932);
+}
+/* Page3 Container designing ends */
+
+/* Page4 Card Designing starts */
+.card {
+  height: 40vh;
+  width: 29vw;
+  backdrop-filter: blur(7px) saturate(172%);
+  -webkit-backdrop-filter: blur(7px) saturate(172%);
+  background-color: rgba(94, 90, 90, 0.16);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: inset 0px 0px 28px 1px rgba(232, 164, 78, 0.39);
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.cardup {
+  height: 22%;
+  width: 75%;
+  background-image: url(Image/giphy\ \(2\).gif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-extra-light);
+  box-shadow: 0px 0px 28px 1px rgba(232, 164, 78, 0.39);
+}
+
+.carddown {
+  height: 70%;
+  width: 95%;
+  background-color: beige;
+  margin-top: 0.5rem;
+  border-radius: 2rem;
+}
+
+.carddown img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
+/* Page4 Card Designing ends */
+
+#page3 a:hover,
+#page4 a:hover {
+  color: var(--text-extra-light);
+}
+/* Page3 & Page4 ends */
+
+/* Footer starts ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+footer {
+  /* height: 35vh; */
+  background-image: url(Image/w3.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > #last {
+  backdrop-filter: blur(7px) saturate(172%);
+  -webkit-backdrop-filter: blur(7px) saturate(172%);
+  background-color: rgba(94, 90, 90, 0.16);
+  border-radius: 2rem;
+  width: 65vw;
+  /* height: 27vh; */
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .left {
+  background-image: url(Image/suraj\ image.png);
+  background-position: top;
+  background-size: cover;
+  height: 18vh;
+  width: 15%;
+  margin-left: 3rem;
+  border-radius: 20%;
+  border-right: 2px solid var(--text-extra-light);
+  border-left: 2px solid var(--text-extra-light);
+  box-shadow: 0px 0px 15px 1px rgba(6, 144, 179, 0.74);
+}
+
+footer .middle {
+  width: 35%;
+  /* height: 80%; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  margin-left: 2rem;
+}
+
+footer .right {
+  height: 20vh;
+  width: 50%;
+  margin: 0.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(Image/w7.webp);
+  background-position: right;
+  background-size: cover;
+  border-radius: 2rem;
+}
+
+.middle i {
+  color: var(--text-extra-light);
+}
+
+#last .middle a:nth-of-type(even):hover {
+  color: rgb(244, 19, 225);
+}
+
+#last .middle a:nth-of-type(even):hover i {
+  color: rgb(244, 19, 225);
+}
+
+#last .middle a:nth-of-type(odd):hover {
+  color: rgb(11, 55, 215);
+}
+
+#last .middle a:nth-of-type(odd):hover i {
+  color: rgb(11, 55, 215);
+}
+
+footer .right li {
+  color: var(--text-light);
+  font-size: 1rem;
+  text-decoration: none;
+  margin: -1rem;
+}
+
+footer .right li:hover {
+  color: white;
+}
+/* Footer ends ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* SCROLLBAR STARTS */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:var(--tertiary-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+/* SCROLLBAR ENDS */
+
+
+
+/* /////////////////////////////////////-------Adding Responsiveness-------////////////////////////////////// */
+@media only screen and (max-width:1100px){
+  .container {
+    /* height: 80vh; */
+    width: 40vw;
+  }
+  #page3{
+    background-image: url(Image/bg.png);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: contain;
+  }
+
+}
+
+@media only screen and (max-width:1000px){
+  ul li{
+    font-size: 0.8rem;
+  }
+  .cardup h2{
+    font-size: 1.2rem;
+  }
+  .right li{
+    font-size: 0.7rem !important;
+  }
+}
+
+
+@media only screen and (max-width:800px){
+  nav .name{
+    display: none;
+  }
+  #page1{
+    margin-top: -2rem;
+  }
+  .projectcard img{
+    width: 40vw;
+  }
+  .container {
+    height: 85vh;
+    width: 43vw;
+  }
+  #last .left{
+    display: none;
+  }
+  iframe{
+    height: 97vh;
+  }
+  
+}
+
+@media only screen and (max-width:700px){
+  .container {
+    /* height: 85vh; */
+    width: 80vw;
+  }
+  .card{
+    width: 40vw;
+  }
+  iframe{
+    height: 144vh;
+    width:100vw;
+  }
+}
+
+
+
+@media only screen and (max-width:600px){
+  #page1{
+    margin-top: 2rem;
+  }
+  #page1,#page2,#page3,#page4,footer,.Head,.projectbox{
+    width: 192vw;
+  }
+  .card{
+    width: 80vw;
+  }
+  #last{
+    width: 150vw !important;
+  }
+  iframe{
+    height: 148vh;
+    width:192vw;
+  }
+  
+}
+
+@media only screen and (max-width:500px){
+  /* ul{
+    flex-wrap: wrap;
+    flex-direction: column;
+  } */
+  nav li{
+    font-size: 1.2rem;
+  }
+  #page1{
+    margin-top: -2rem;
+  }
+}
+@media only screen and (max-width:400px){
+  .container {
+    /* height: 85vh; */
+    width: 130vw;
+  }
+  .projectcard img{
+    width: 80vw;
+  }
+  nav li{
+    font-size: 0.9rem;
+  }
+}
+
+
+
