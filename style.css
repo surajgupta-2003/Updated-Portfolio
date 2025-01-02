@@ -581,7 +581,6 @@ footer .right li {
   color: var(--text-light);
   font-size: 1rem;
   text-decoration: none;
-  margin: -1rem;
 }
 
 footer .right li:hover {
