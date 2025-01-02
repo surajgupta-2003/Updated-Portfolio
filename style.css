@@ -420,6 +420,8 @@ iframe{
 }
 
 .container > p {
+  font-family: var(--s_font);
+    font-size: 1.4rem !important;
   color: var(--secondary-color);
   height: 65%;
   padding: 2rem;
